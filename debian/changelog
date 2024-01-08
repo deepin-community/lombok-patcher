@@ -1,3 +1,33 @@
+lombok-patcher (0.42-3) unstable; urgency=medium
+
+  * Team upload.
+  * Build with ivy-debian-helper
+  * Install the Maven artifacts for lombok.injector
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 11 May 2022 08:26:13 +0200
+
+lombok-patcher (0.42-2) unstable; urgency=medium
+
+  * Install the Maven artifacts
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 11 May 2022 00:59:25 +0200
+
+lombok-patcher (0.42-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 10 May 2022 19:18:23 +0200
+
+lombok-patcher (0.40-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - Refreshed the patch
+  * Standards-Version updated to 4.6.0.1
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 10 May 2022 16:49:03 +0200
+
 lombok-patcher (0.36-1) unstable; urgency=medium
 
   * New upstream version 0.36.

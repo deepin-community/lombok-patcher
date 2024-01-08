@@ -1,1 +1,10 @@
-.pc/
+.classpath
+.project
+.settings
+bin
+build
+dist
+escudo-upload.key
+lib
+contrib
+ivyCache
