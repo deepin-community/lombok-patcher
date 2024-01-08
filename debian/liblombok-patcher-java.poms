@@ -1,0 +1,2 @@
+debian/poms/patcher.pom  --java-lib --set-version=0.42 --artifact=dist/lombok.patcher.jar
+debian/poms/injector.pom --java-lib --set-version=0.42 --artifact=dist/lombok.injector-*.jar

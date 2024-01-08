@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2009-2014 The Project Lombok Authors.
+ * Copyright (C) 2009-2021 The Project Lombok Authors.
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -45,6 +45,10 @@ public class ExitFromMethodEarlyScript extends MethodLevelPatchScript {
 	private final boolean transplant, insert;
 	private final boolean insertCallOnly;
 	
+	@Override public String getPatchScriptName() {
+		return "Exit Early from " + describeMatchers();
+	}
+	
 	ExitFromMethodEarlyScript(List<TargetMatcher> matchers, Hook decisionWrapper, Hook valueWrapper, boolean transplant, boolean insert, Set<StackRequest> requests) {
 		super(matchers);
 		this.decisionWrapper = decisionWrapper;
@@ -82,7 +86,7 @@ public class ExitFromMethodEarlyScript extends MethodLevelPatchScript {
 		private final String ownClassSpec;
 		
 		public ExitEarly(MethodVisitor mv, MethodLogistics logistics, String ownClassSpec) {
-			super(Opcodes.ASM7, mv);
+			super(Opcodes.ASM9, mv);
 			this.logistics = logistics;
 			this.ownClassSpec = ownClassSpec;
 		}
